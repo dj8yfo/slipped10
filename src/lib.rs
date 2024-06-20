@@ -10,7 +10,7 @@ use alloc::vec::Vec;
 use core::convert::TryInto;
 use core::fmt;
 
-use ed25519_dalek::{PublicKey, SecretKey};
+use ed25519_dalek::{SigningKey, VerifyingKey};
 use hmac::{crypto_mac::Output, Hmac, Mac, NewMac};
 use sha2::Sha512;
 
@@ -65,7 +65,8 @@ impl Curve {
     fn public_key(&self, key: &[u8; 32]) -> Vec<u8> {
         match self {
             Curve::Ed25519 => {
-                let public: PublicKey = (&SecretKey::from_bytes(key).unwrap()).into();
+                let signing_key: SigningKey = SigningKey::from_bytes(key);
+                let public: VerifyingKey = signing_key.verifying_key();
                 let mut result = Vec::new();
                 result.push(0);
                 public.to_bytes().iter().for_each(|i| result.push(*i));
