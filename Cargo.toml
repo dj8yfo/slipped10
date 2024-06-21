@@ -1,6 +1,6 @@
 [package]
 name = "slipped10"
-version = "0.4.4"
+version = "0.4.5"
 authors = ["Ngo Iok Ui <wusyong9104@gmail.com>", "dj8yf0μl"]
 edition = "2021"
 description = "SLIP-0010 : ed25519 private key derivation from master private key"

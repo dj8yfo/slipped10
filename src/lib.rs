@@ -149,6 +149,5 @@ fn hmac_sha256(key: &[u8], data: &[u8]) -> Output<HmacSha256> {
 
     // `result` has type `Output` which is a thin wrapper around array of
     // bytes for providing constant time equality check
-    let result = mac.finalize();
-    result
+    mac.finalize()
 }
