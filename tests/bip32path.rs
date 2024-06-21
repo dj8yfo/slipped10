@@ -1,6 +1,6 @@
 use core::str::FromStr;
 
-use slip10::BIP32Path;
+use slipped10::BIP32Path;
 
 const HARDEND: u32 = 1 << 31;
 

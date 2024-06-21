@@ -1,13 +1,13 @@
 [package]
-name = "slip10"
+name = "slipped10"
 version = "0.4.4"
-authors = ["Ngo Iok Ui <wusyong9104@gmail.com>"]
-edition = "2018"
-description = "SLIP-0010 : Universal private key derivation from master private key"
-homepage = "https://github.com/wusyong/slip10"
-repository = "https://github.com/wusyong/slip10"
-documentation = "https://docs.rs/slip10"
-license = "Apache-2.0 OR MIT"
+authors = ["Ngo Iok Ui <wusyong9104@gmail.com>", "dj8yf0μl"]
+edition = "2021"
+description = "SLIP-0010 : ed25519 private key derivation from master private key"
+homepage = "https://github.com/dj8yfo/slipped10"
+repository = "https://github.com/dj8yfo/slipped10"
+keywords = ["slip-0010", "slip-10", "slip10"]
+license = "MIT"
 readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

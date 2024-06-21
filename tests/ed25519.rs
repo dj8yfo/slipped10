@@ -1,7 +1,7 @@
 use core::str::FromStr;
 
 use hex::FromHex;
-use slip10::*;
+use slipped10::*;
 
 #[test]
 fn test_ed25519() {
